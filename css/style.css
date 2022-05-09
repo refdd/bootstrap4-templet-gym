@@ -1,0 +1,241 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Cairo:wght@400;700;900&display=swap');
+body{
+    direction: rtl;
+    font-family: 'Cairo', sans-serif;
+    text-align: right;
+}
+.navbar{
+    box-shadow: 1px 2px 5px #ededed ;
+  
+}
+.home {
+    height: 600px ;
+    background-image: url("../images/gymbackground.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    padding: 1px ;
+}
+.homeitem {
+    width: 60%;
+    margin-right:auto;
+    margin-top: 15%;
+    background-color: #00000026;
+    color: #fff;
+}
+.homeitem h2 { 
+font-size: 45px ;
+
+}
+.homeitem p { 
+    font-size: 25px ;
+    color: rgb(213, 241, 241);
+}
+@media (max-width :766px ){
+    
+    .homeitem {
+       width: 100%;
+    }  
+    .homeitem  p{
+        display: none;
+     }  
+}
+section{
+    padding:  80px 0 ;
+}
+.title-glob{
+    position: relative;
+    display: inline-block;
+}
+.title-glob::after{
+content: "";
+display: block;
+position: absolute;
+background-color: #0069d9;
+width: 70%;
+height: 5px ;
+bottom: -20px ;
+
+}
+.box{
+    display: flex;
+    align-items: center;
+    margin-top: 20px ;
+}
+.box img {
+width: 80px ;
+height: 100px ;
+}
+.card{
+    display: flex;
+}
+.card  div{
+    width:70%  ;
+}
+.card img{
+    width: 50px  ;
+}
+.subsrcide{
+    background-image: url("../images/backgroundgym2\ .webp");
+    background-repeat: no-repeat;
+    background-size: cover;
+    color: #fff;
+    padding: 1px;
+    text-align: center;
+
+}
+.subscribe-item{
+    width: 50%;
+    margin: 50px auto;
+}
+.subscribe-item  h2{
+    font-size:  40px  ;
+}
+.subscribe-item .form {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.subscribe-item .form input{
+width: 80%;
+}
+.subscribe-item .form button{
+    width: 15%;
+
+}
+@media (max-width :770px ){
+    .subscribe-item .form {
+        flex-direction: column;
+    }
+    .subscribe-item .form input{
+        width: 100%;
+    }
+    .subscribe-item .form button{
+        width: 100%;
+
+    }
+    .subscribe-item{
+        width: 80%;
+
+    }
+    .subsrcide{
+        background-repeat: round;
+    }
+}
+.form-control{
+    background-color: transparent;
+}
+.portfolio .card img {
+    width:280px;
+}
+.testimonials .card img {
+    width:280px;
+}
+.img-muscles{
+    cursor: pointer;
+}
+.img-muscles:hover{
+width: 500px ;
+position: relative;
+z-index: 100;
+} 
+.footer
+{
+    background-color: #0AA1DD;
+}
+
+.footer h3{
+    background-color: #fff;
+    color: #222;
+    display: inline-block;
+    font-size: 16px ;
+    margin: 0 0 12px ;
+    padding: 10px 20px ;
+    text-transform:uppercase;
+    border-radius: 10px ;
+}
+
+/* blog */
+.breadcrumb{
+    margin: 0;
+    justify-content: flex-end;
+}
+.aboutBlog{
+    background-color: #222;
+}
+.breadcrumb-item+.breadcrumb-item::before {
+    float: right;
+}
+
+.info-box{
+    text-align: center;
+    color: #fff;
+}
+.info-box h5{
+    font-size: 25px ;
+    font-weight: bold;
+    margin-bottom: 15px ;
+    text-transform: uppercase;
+}
+.info-box p{
+    font-size: 15px ;
+    display: block;
+    margin: 0;
+}
+.blog .jumbotron{
+display: flex;
+justify-content:space-between ;
+align-items: center;
+}
+@media (max-width:770px  ){
+    .blog .jumbotron{
+        flex-direction: column;
+    }
+    .blog .jumbotron img {
+         margin: 20px ;
+    }
+    .blog-img{
+        width: 80%;
+
+    }
+}
+.jumbotron{
+    border-bottom: 3px solid #007bff ;
+    margin: 0
+}
+.single-services{
+    display: flex;
+      align-items: center;   
+      color: #fff; 
+}
+.services-area{
+    background-color: #212529;
+}
+/* gallery  */
+.gallery {
+    background-color:#212529; 
+}
+.gallery-img{
+    position: relative;
+    overflow: hidden;
+}
+.gallery-img img{
+    height: 435px ;
+}
+.overlay {
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    height: 100%;
+    width: 100%;
+    opacity: 0;
+    transition: .5s ease;
+    background-color: #3796bba6;
+  }
+  
+  .container-img:hover .overlay {
+    opacity: 1;
+  }
